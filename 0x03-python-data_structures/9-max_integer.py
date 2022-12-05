@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
     if len(my_list) == 0:
-        return None
+        return (None)
     i = len(my_list) - 1
     j = 0
     while j < i:
@@ -9,4 +9,4 @@ def max_integer(my_list=[]):
             temp = my_list[j]
             my_list[j + 1] = temp
         j += 1
-    return temp
+    return (temp)
