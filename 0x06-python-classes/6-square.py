@@ -5,7 +5,7 @@
 class Square:
     """defines a square"""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Create a Square
         Args:
             size: length of a side of Square
@@ -73,7 +73,7 @@ class Square:
             pos += "\n"
         for w in range(self.size):
             for i in range(self.position[0]):
-                pos +=" "
+                pos += " "
             for j in range(self.size):
                 pos += "#"
             pos += "\n"
