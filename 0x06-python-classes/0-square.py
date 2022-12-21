@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
 class Square:
-    def __init__(self):
-        return None
+    """Defines a square"""
+    pass
