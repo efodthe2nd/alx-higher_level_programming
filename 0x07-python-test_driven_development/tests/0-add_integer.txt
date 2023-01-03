@@ -34,7 +34,7 @@ Test extra args:
 	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Test other data types:
-	>>> print(Add_integer("hey"))
+	>>> print(add_integer("hey"))
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
