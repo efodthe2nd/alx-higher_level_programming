@@ -69,7 +69,7 @@ class Rectangle:
 
     def __str__(self):
         """Prints rectangle with #'s """
-        if self.__width == 0 or self._height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         pic = "\n".join(["#" * self.__width for rows in range(self.height)])
         return pic
