@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-Module 4-rectangle
+Module 5-rectangle
 Contains class Rectangle with private attribute width and height,
-public area and perimeter methods, and allows printing #'s
+public area and perimeter methods, allows printing #'s, and deletes
 """
 
 
 class Rectangle:
     """
-    Defines class rectangle with private attribure width and height
+    Defines class rectangle with rpivate attribute width and height
 
     Args:
         width (int): width
@@ -24,6 +24,7 @@ class Rectangle:
         perimeter(self)
         __str__(self)
         __repr__(self)
+        __del__(self)
     """
     def __init__(self, width=0, height=0):
         """Initialize rectangles """
@@ -41,7 +42,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("Width must be an integer")
         if value < 0:
-            raise ValueError("Width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -51,7 +52,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """SEtter sets height if int > 0 """
+        """ Setter sets height if int > 0 """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -59,22 +60,26 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Return width * height """
-        return self.__width * self.__height
+        """ Return width * height """
+        return self.__Width * self.__height
 
     def perimeter(self):
-        """ Return 2*width + 2*height (or return 0 if width or height is 0)"""
+        """Return 2 *width + 2 *height (or return 0 if width or height is 0)"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return (2 * self.__width) + (2 * self.height)
 
     def __str__(self):
         """ Prints rectangle with #'s """
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.__height == 0:
             return ""
         pic = "\n".join(["#" * self.__width for rows in range(self.__height)])
         return pic
 
     def __repr__(self):
-        """String representation to recreate new instance """
+        """ String representation to recreate new instance """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    def __del__(self):
+        """ Deletes instance of class """
+        print("Bye rectangle...")
