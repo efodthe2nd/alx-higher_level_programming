@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-Module 7-rectangle
+Module 8-rectangle
 Contains class Rectangle with private attribute width and height,
 public area and perimeter methods, allows printing using any given symbol,
-deletes, and has public attribute to keep track of number of instances
+deletes, has public attribute to keep track of number of instances,
+and has static method that returns bigger rectangle out of two given
 """
 
 
@@ -20,7 +21,7 @@ class Rectangle():
         print_symbol (any type): used to print string representation
 
     Functions:
-        __intit__(self, width, height)
+        __init__(self, width, height)
         width(self)
         width(self, value)
         height(self)
@@ -30,6 +31,7 @@ class Rectangle():
         __str__(self)
         __repr__(self)
         __del__(self)
+        bigger_or_equal(rect_1, rect_2)
     """
     number_of_instances = 0
     print_symbol = "#"
@@ -47,14 +49,14 @@ class Rectangle():
 
     @property
     def width(self):
-        """ Getter returns width """
+        """ Getterreturns width """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ Setter sets width if int  > 0 """
+        """ Setter sets width if int > 0 """
         if not isinstance(value, int):
-            raise TypeError("Width must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__Width = value
@@ -94,3 +96,13 @@ class Rectangle():
     def __repr__(self):
         """ String representation to recreate new instance """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    @staticmethod
+    def bigger_or_eqal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("Rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        return rect_2
