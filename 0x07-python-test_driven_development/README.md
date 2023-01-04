@@ -1,9 +1,9 @@
-#Python - Test Driven Development
+# Python - Test Driven Development
 <hr>
 Each file in this repository holds code that illustrates an essential concept ofprogramming, specific to the Python programming language:
 doctests, unit tests
 
-#Description of what each file shows:
+# Description of what each file shows:
 * main_files ----- folder holds main programs that showcase examples of how to use functions
 * tests ---------- folder holds all tests and edge case checking
 * Files that start with:
@@ -17,7 +17,7 @@ doctests, unit tests
 6. 100-function multiplies two matrices
 7. 101-function multiplies two matrices using NumPy module
 
-#Environment
+# Environment
 * Language: Python 3.4.8
 * OS: Ubuntu 14.04 LTS
 * Compiler: python3
@@ -25,6 +25,6 @@ doctests, unit tests
 
 <hr>
 
-#Authors
+# Authors
 
 David Efod
