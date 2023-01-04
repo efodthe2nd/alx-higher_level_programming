@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 """
 Defines class with no class or object attribute
 Control dynamically created instance attributes
@@ -21,6 +21,5 @@ class LockedClass():
     ...
     AttributeError: 'LockedClass' object has no attribute 'last_name'
     """
-
 
     __slots__ = "first_name"
