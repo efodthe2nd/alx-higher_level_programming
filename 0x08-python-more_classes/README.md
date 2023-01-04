@@ -1,9 +1,9 @@
-#Python - More Classes and Objects
+# Python - More Classes and Objects
 <hr>
 Each file in this repository holds code that illustrates an essential concept of programming, specific to the Python programming language:
 classes, __del__, __repr__, @classmethods, @staticmethods
 
-#Description of what each file shows:
+# Description of what each file shows:
 * main_files ----- folder holds main programs that showcase examples of how to use functions
 * Files that start with:
 
@@ -18,12 +18,12 @@ classes, __del__, __repr__, @classmethods, @staticmethods
 8. create static method that compares rectangle areas
 9. create class method that returns new rectangle instance as a square
 
-#Environment
+# Environment
 * Language: Python 3.4.3
 * OS: Ubuntu 14.04 LTS
 * Compiler: python3
 * Style guidelines: [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/) || [Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 <hr>
 
-#Authors
+# Authors
 David Efod
