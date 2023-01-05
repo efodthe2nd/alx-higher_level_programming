@@ -1,6 +1,7 @@
 # Python - Everything is an Object
 <hr>
-> This repo is not meant to be used and most files mainly hold "Yes", "No", "True" or "False" to answer practice questions about python objects regarding immutable and mutable objects.
+> This repo is not meant to be used and most files mainly hold "Yes", "No", "True" or "False" to answer practice questions about python objects
+> regarding immutable and mutable objects.
 
 # Environment
 * Language: Python 3.4.3
