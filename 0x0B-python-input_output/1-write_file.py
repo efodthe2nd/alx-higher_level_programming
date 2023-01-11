@@ -1,4 +1,4 @@
-#!/ussr/bin/python3
+#!/usr/bin/python3
 """This module defines a file-writing function."""
 
 
