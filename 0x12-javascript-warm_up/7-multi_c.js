@@ -8,6 +8,6 @@ if (len === 2 || isNaN(args[2])) {
 } else {
   const num = +args[2];
   for (let i = 0; i < num; i++) {
-  	console.log('C is fun');
+    console.log('C is fun');
   }
 }
