@@ -2,9 +2,9 @@
 
 module.exports = class Rectangle {
   constructor (w, h) {
-    if (w < 1 || h < 1) {
+    if (w <= 0 || w === undefined || h <= 0 || h === undefined) {
       const Rect = class Rectangle {};
-	  return new Rect();
+      return new Rect();
     }
 
     this.width = w;
