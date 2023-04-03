@@ -6,7 +6,7 @@ the body of the response
 """
 
 import urllib.request
-import urlib.parse
+import urllib.parse
 import sys
 
 
