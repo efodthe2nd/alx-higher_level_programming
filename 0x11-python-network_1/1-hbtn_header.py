@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Dispalys the X-Request-Id of a url passed as argument"""
 
-import urlib.request
+import urllib.request
 import sys
 
 
