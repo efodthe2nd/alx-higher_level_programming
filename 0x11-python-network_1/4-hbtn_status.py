@@ -13,5 +13,5 @@ def main():
     print('\t- content: {}'.format(content))
 
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
